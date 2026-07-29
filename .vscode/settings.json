@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/galactic/lib/python3.8/site-packages",
+        "",
+        "/home/wx/Documents/carla_quick/carla/PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg",
+        "/home/wx/Documents/carla_quick/carla/PythonAPI/carla"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/galactic/lib/python3.8/site-packages",
+        "",
+        "/home/wx/Documents/carla_quick/carla/PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg",
+        "/home/wx/Documents/carla_quick/carla/PythonAPI/carla"
+    ]
+}

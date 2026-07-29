@@ -1,0 +1,4 @@
+scenario: acc
+description: lead vehicle slows down and ego maintains a safe distance
+target_speed: 6.0
+safe_distance: 8.0

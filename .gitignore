@@ -1,0 +1,8 @@
+build/
+install/
+log/
+results/
+*.bag
+*.db3
+__pycache__/
+*.egg-info/

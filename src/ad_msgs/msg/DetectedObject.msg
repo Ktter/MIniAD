@@ -1,0 +1,16 @@
+uint8 UNKNOWN=0
+uint8 VEHICLE=1
+uint8 PEDESTRIAN=2
+uint8 STATIC=3
+std_msgs/Header header
+uint8 class_id
+string id
+float64 x
+float64 y
+float64 z
+float64 vx
+float64 vy
+float64 length
+float64 width
+float64 confidence
+bool valid
