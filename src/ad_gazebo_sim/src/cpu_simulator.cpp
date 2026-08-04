@@ -17,8 +17,8 @@ CpuSimulator::CpuSimulator() : Node("cpu_simulator") {
       "/sim/ground_truth/objects", 10);
   radar_publisher_ = create_publisher<ad_msgs::msg::DetectedObjectArray>(
       "/sim/radar/targets", 10);
-  image_publisher_ =
-      create_publisher<sensor_msgs::msg::Image>("/sim/camera/front/image", 2);
+  image_publisher_ = create_publisher<sensor_msgs::msg::Image>(
+      "/sim/camera/front/image_raw", 2);
   lidar_publisher_ =
       create_publisher<sensor_msgs::msg::PointCloud2>("/sim/lidar/points", 2);
   control_subscription_ = create_subscription<ad_msgs::msg::ControlCommand>(

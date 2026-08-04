@@ -9,6 +9,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/EgoPose.msg" "msg/VehicleState.msg" "msg/DetectedObject.msg"
   "msg/DetectedObjectArray.msg" "msg/TrajectoryPoint.msg" "msg/Trajectory.msg"
   "msg/ControlCommand.msg" "msg/BehaviorState.msg" "msg/ScenarioStatus.msg"
+  "msg/BehaviorEvent.msg"
   DEPENDENCIES builtin_interfaces geometry_msgs std_msgs)
 ament_export_dependencies(rosidl_default_runtime)
 ament_package()

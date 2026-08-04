@@ -7,5 +7,6 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     scenario = LaunchConfiguration('scenario')
-    sim = IncludeLaunchDescription(PythonLaunchDescriptionSource(PathJoinSubstitution([FindPackageShare('ad_gazebo_sim'),'launch','gazebo.launch.py'])), launch_arguments={'scenario': scenario}.items())
-    return LaunchDescription([DeclareLaunchArgument('scenario', default_value='acc'), sim, Node(package='ad_localization', executable='localization_node', output='screen'), Node(package='ad_perception', executable='perception_node', output='screen'), Node(package='ad_behavior', executable='behavior_node', parameters=[{'scenario': scenario}], output='screen'), Node(package='ad_planning_control', executable='planning_control_node', output='screen')])
+    mode = LaunchConfiguration('mode')
+    sim = IncludeLaunchDescription(PythonLaunchDescriptionSource(PathJoinSubstitution([FindPackageShare('ad_gazebo_sim'),'launch','gazebo.launch.py'])), launch_arguments={'scenario': scenario, 'mode': mode}.items())
+    return LaunchDescription([DeclareLaunchArgument('scenario', default_value='acc'), DeclareLaunchArgument('mode', default_value='kinematic'), sim, Node(package='ad_localization', executable='localization_node', output='screen'), Node(package='ad_perception', executable='perception_node', output='screen'), Node(package='ad_behavior', executable='behavior_node', parameters=[{'scenario': scenario}], output='screen'), Node(package='ad_planning_control', executable='planning_control_node', output='screen')])

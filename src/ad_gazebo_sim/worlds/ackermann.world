@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<sdf version="1.6"><world name="ackermann"><include><uri>model://sun</uri></include><include><uri>model://ground_plane</uri></include><include><uri>model://ego_vehicle_ackermann</uri><name>ego_vehicle</name><pose>0 0 0 0 0 0</pose></include></world></sdf>
